@@ -61,6 +61,7 @@ Please refer
 ![image](https://github.com/sudarshan14/Jiva.agTakeHomeAssignment/blob/main/app_support_images/package_structure.png)
  
 ## Screenshots
+![image](https://github.com/sudarshan14/Jiva.agTakeHomeAssignment/blob/main/app_support_images/1.png),![image](https://github.com/sudarshan14/Jiva.agTakeHomeAssignment/blob/main/app_support_images/2.png),![image](https://github.com/sudarshan14/Jiva.agTakeHomeAssignment/blob/main/app_support_images/3.png)
  - app_support_images/1.png
  - app_support_images/2.png
  - app_support_images/3.png
