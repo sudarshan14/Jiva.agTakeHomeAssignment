@@ -58,8 +58,8 @@ Mandi app is a demo app which allows apple sellers to sell their product on choi
 ##  Package Structure
 
 Please refer 
- - app_support_images/package_structure.png
-
+![image](https://github.com/sudarshan14/Jiva.agTakeHomeAssignment/blob/main/app_support_images/package_structure.png)
+ 
 ## Screenshots
  - app_support_images/1.png
  - app_support_images/2.png
