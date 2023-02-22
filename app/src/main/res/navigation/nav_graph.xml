@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/infoSellProductFragment">
+    <fragment
+        android:id="@+id/infoSellProductFragment"
+        android:name="ag.jiva.mandi.ui.InfoSellProductFragment"
+        android:label="fragment_info_sell_product"
+        tools:layout="@layout/fragment_info_sell_product" >
+        <action
+            android:id="@+id/action_infoSellProductFragment_to_thankYouFragment"
+            app:destination="@id/thankYouFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thankYouFragment"
+        android:name="ag.jiva.mandi.ui.ThankYouFragment"
+        android:label="ThankYouFragment" >
+
+        <action
+            android:id="@+id/action_thankYouFragment_to_infoSellProductFragment"
+            app:destination="@id/infoSellProductFragment" />
+    </fragment>
+</navigation>

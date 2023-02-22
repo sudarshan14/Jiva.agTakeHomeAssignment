@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Mandi</string>
+    <string name="mandi">Mandi</string>
+    <string name="sell_my_product">Sell My Product</string>
+    <string name="sell_more">Sell More</string>
+    <string name="gross_price">Gross Price: %1$.2f </string>
+    <string name="applied_loyalty_index">Applied Loyalty Index: %1$.2f </string>
+    <string name="please_type_seller_name">Please type seller\'s name</string>
+    <string name="please_type_loyalty_card_id">Please type loyalty card id</string>
+    <string name="seller">Seller Name</string>
+    <string name="loyalty_card">Loyalty Card Identifier</string>
+    <string name="please_insert_quantity">Please insert quantity</string>
+    <string name="in_kg">KG</string>
+    <string name="select_village">Please select village</string>
+    <string name="thank_you_seller">Thank you %1$S for selling your quality product</string>
+    <string name="ensure_to_collect_amount">Please ensure you received %1$S INR for %2$S KG of your product.</string>
+</resources>

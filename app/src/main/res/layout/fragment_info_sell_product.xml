@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/mandi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="@string/mandi"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sellerName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:hint="@string/seller"
+        app:helperText="@string/please_type_seller_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mandi">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextSellerName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:paddingStart="@dimen/dp_15"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loyaltyCardIdentifier"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        app:helperText="@string/please_type_loyalty_card_id"
+        app:layout_constraintEnd_toEndOf="@+id/sellerName"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/sellerName">
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextLoyaltyCardIdentifier"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_56"
+            android:hint="@string/loyalty_card"
+            android:paddingStart="@dimen/dp_15"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textViewSelectVillage"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="start"
+        android:text="@string/select_village"
+        app:layout_constraintEnd_toEndOf="@id/sellerName"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/loyaltyCardIdentifier" />
+
+    <Spinner
+        android:id="@+id/spinnerVillageSalesPriceInfo"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintEnd_toEndOf="@+id/sellerName"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSelectVillage" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/grossWeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:hint="@string/in_kg"
+        app:helperText="@string/please_insert_quantity"
+        app:layout_constraintEnd_toEndOf="@+id/sellerName"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerVillageSalesPriceInfo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextGrossWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textViewGrossPrice"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="start"
+        android:text="@string/gross_price"
+        android:textSize="@dimen/sp_30"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/sellerName"
+        app:layout_constraintStart_toStartOf="@+id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/grossWeight" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/textViewAppliedLoyaltyIndex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="start"
+        android:text="@string/applied_loyalty_index"
+        android:textColor="@color/dark_green"
+        app:layout_constraintEnd_toEndOf="@id/sellerName"
+        app:layout_constraintStart_toStartOf="@id/sellerName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGrossPrice" />
+
+
+    <Button
+        android:id="@+id/buttonSellMyProduct"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_65"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:text="@string/sell_my_product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/sellerName"
+        app:layout_constraintStart_toStartOf="@id/sellerName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
